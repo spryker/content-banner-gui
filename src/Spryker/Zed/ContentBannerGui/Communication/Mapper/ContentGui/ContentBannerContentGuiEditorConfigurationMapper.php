@@ -17,9 +17,6 @@ class ContentBannerContentGuiEditorConfigurationMapper implements ContentBannerC
      */
     protected $contentBannerGuiConfig;
 
-    /**
-     * @param \Spryker\Zed\ContentBannerGui\ContentBannerGuiConfig $config
-     */
     public function __construct(ContentBannerGuiConfig $config)
     {
         $this->contentBannerGuiConfig = $config;
@@ -41,9 +38,6 @@ class ContentBannerContentGuiEditorConfigurationMapper implements ContentBannerC
         return $templates;
     }
 
-    /**
-     * @return string
-     */
     public function getTwigFunctionTemplate(): string
     {
         return '{{ ' . $this->contentBannerGuiConfig->getTwigFunctionName() . "('%KEY%', '%TEMPLATE%') }}";

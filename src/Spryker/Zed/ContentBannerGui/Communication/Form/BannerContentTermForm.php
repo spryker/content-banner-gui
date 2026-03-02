@@ -71,11 +71,6 @@ class BannerContentTermForm extends AbstractType
      */
     public const LABEL_ALT_TEXT = 'Alt-text';
 
-    /**
-     * @param \Symfony\Component\OptionsResolver\OptionsResolver $resolver
-     *
-     * @return void
-     */
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
@@ -105,9 +100,6 @@ class BannerContentTermForm extends AbstractType
         });
     }
 
-    /**
-     * @return string
-     */
     public function getBlockPrefix(): string
     {
         return 'banner';

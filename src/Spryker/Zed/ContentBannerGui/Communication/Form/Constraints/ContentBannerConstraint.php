@@ -39,17 +39,11 @@ class ContentBannerConstraint extends SymfonyConstraint
         parent::__construct($options);
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBannerGui\Dependency\Facade\ContentBannerGuiToContentBannerFacadeInterface
-     */
     public function getContentBannerFacade(): ContentBannerGuiToContentBannerFacadeInterface
     {
         return $this->contentBannerFacade;
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBannerGui\Dependency\Service\ContentBannerGuiToUtilEncodingInterface
-     */
     public function getUtilEncoding(): ContentBannerGuiToUtilEncodingInterface
     {
         return $this->utilEncoding;

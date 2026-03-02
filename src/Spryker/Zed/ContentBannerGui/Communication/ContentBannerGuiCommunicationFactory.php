@@ -34,25 +34,16 @@ class ContentBannerGuiCommunicationFactory extends AbstractCommunicationFactory
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBannerGui\Communication\Mapper\ContentGui\ContentBannerContentGuiEditorConfigurationMapperInterface
-     */
     public function createContentBannerContentGuiEditorMapper(): ContentBannerContentGuiEditorConfigurationMapperInterface
     {
         return new ContentBannerContentGuiEditorConfigurationMapper($this->getConfig());
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBannerGui\Dependency\Facade\ContentBannerGuiToContentBannerFacadeInterface
-     */
     public function getContentBannerFacade(): ContentBannerGuiToContentBannerFacadeInterface
     {
         return $this->getProvidedDependency(ContentBannerGuiDependencyProvider::FACADE_CONTENT_BANNER);
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBannerGui\Dependency\Service\ContentBannerGuiToUtilEncodingInterface
-     */
     public function getUtilEncoding(): ContentBannerGuiToUtilEncodingInterface
     {
         return $this->getProvidedDependency(ContentBannerGuiDependencyProvider::SERVICE_UTIL_ENCODING);
