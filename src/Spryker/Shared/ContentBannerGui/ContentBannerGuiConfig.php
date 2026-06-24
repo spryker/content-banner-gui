@@ -12,6 +12,8 @@ use Spryker\Shared\Kernel\AbstractSharedConfig;
 class ContentBannerGuiConfig extends AbstractSharedConfig
 {
     /**
+     * @api
+     *
      * @uses \Spryker\Shared\ContentBanner\ContentBannerConfig::CONTENT_TYPE_BANNER
      *
      * Content item banner
@@ -21,6 +23,8 @@ class ContentBannerGuiConfig extends AbstractSharedConfig
     public const CONTENT_TYPE_BANNER = 'Banner';
 
     /**
+     * @api
+     *
      * @uses \Spryker\Shared\ContentBanner\ContentBannerConfig::CONTENT_TERM_BANNER
      *
      * Content item banner
